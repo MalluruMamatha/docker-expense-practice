@@ -1,7 +1,13 @@
 ## take the official image
 FROM node:20
+## Expose the port
+EXPOSE 8080
 ## created user
 RUN useradd expense
+## backend should connect with db
+ENV DB_HOST=mysql \
+    DB_USER='' \
+    DB_PWD=''
 ## created a directory to keep app files
 RUN mkdir /opt/service
 ### adding user permission to the directory
