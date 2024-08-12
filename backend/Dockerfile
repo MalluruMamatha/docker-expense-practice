@@ -22,4 +22,6 @@ RUN npm install
 ### run app file i.e;index.js
 CMD [ "node" , "index.js" ]
 
-
+## need to install mysql client in backend to connect mysql server
+#apt update
+#apt install -y default-mysql-client
