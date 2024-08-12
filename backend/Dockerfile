@@ -18,7 +18,7 @@ COPY *.js .
 ### install dependencies
 RUN npm install
 ### run the container with user
-USER expense
+##USER expense
 ### run app file i.e;index.js
 CMD [ "node" , "index.js" ]
 
